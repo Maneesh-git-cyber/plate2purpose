@@ -1,0 +1,110 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 80px); /* Adjust 80px based on your navbar height */
+}
+.formContainer {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.formContainer h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+.formGroup label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #6e6e73;
+}
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #52b788;
+    box-shadow: 0 0 0 2px rgba(82, 183, 136, 0.2);
+}
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.submitButton {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #52b788, #2d6a4f);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+.submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(45, 106, 79, 0.3);
+}
+.submitButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.fieldHint {
+    font-size: 0.8rem;
+    color: #86868b;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.cancelButton {
+    width: 100%;
+    padding: 0.9rem;
+    background: #e9e9eb;
+    color: #1d1d1f;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancelButton:hover {
+    background: #dcdce0;
+}
+
+
+.submitButton {
+    margin-top: 0; 
+}

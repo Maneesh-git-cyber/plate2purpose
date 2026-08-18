@@ -1,0 +1,93 @@
+/* client/src/pages/VerificationPage.module.css */
+
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #f8fdf9 0%, #f1f8f4 100%);
+    min-height: 100vh;
+}
+
+.verificationBox {
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 650px;
+    width: 100%;
+}
+
+.verificationBox h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 0.5rem;
+}
+
+.verificationBox p {
+    margin-bottom: 1.5rem;
+    color: #6e6e73;
+    line-height: 1.6;
+}
+
+.verificationBox hr {
+    border: none;
+    border-top: 1px solid #f0f0f0;
+    margin: 1.5rem 0;
+}
+
+/* Form Group styles for consistency */
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #6e6e73;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: #52b788;
+    box-shadow: 0 0 0 2px rgba(82, 183, 136, 0.2);
+}
+
+.submitButton {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #52b788, #2d6a4f);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(45, 106, 79, 0.3);
+}
+
+.submitButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
